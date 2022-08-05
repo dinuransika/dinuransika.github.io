@@ -1,0 +1,328 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeListHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & {\small #2}\\
+    \end{tabular*}\vspace{-15pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Dinura Dissanayake} \\ \vspace{1pt}
+    Department of Computer Engineering,University of Peradeniya, Sri Lanka  \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (+94) 77-416-1509 ~ \href{mailto:dinuransika98@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dinuransika98@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/dinura-dissanayake-9486ba1a1/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Dinura Dissanayake}}  ~
+    \href{https://github.com/dinuransika}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/dinuransika}} \\ \vspace{1pt}
+    \vspace{-8pt}
+\end{center}
+
+\vspace{2pt}
+I’m a 3rd year computer engineering undergraduate with a keen interest in machine learning, computer vision and embedded systems.
+\vspace{-2pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Peradeniya}{December 2018 -- May Present}
+      {BSc Engineering (Hons) | Faculty of Engineering }{GPA - 3.79 / 4.0}
+      \resumeSubheading
+      {D.S. Senanayake College}{December 2009 -- August 2017}
+      {G.C.E. Advance Level Examination}{Comb. Maths (A), Physics (B), Chemistry (B)}
+    %   \resumeSubSubheading{G.C.E. Ordinary Level Examination}{9 A's}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=6pt]
+                \item\small Data Structures
+                \item Software Methodology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+% %-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Casual Instructor}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Startup, Inc}{May 2019 -- August 2019}
+%       {Front End Developer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+%         \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+%         \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+%         \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+%     \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Analysis Tool for Industrial Images} $|$ \emph{Group Project}}{January 2022 - Present}
+          \resumeItemListStart
+            \resumeItem{An analysis tool for increasing the performance of an injection mold maintenance device which uses image processing techniques to identify stuck plastic particles on molds.}
+            \resumeItem{Technologies - React JS, Node JS, Express, Python}
+            \resumeItem{\underline{\href{https://github.com/cepdnaclk/e17-co328-Analysis-Tool-for-Industrial-Images}{Project Page Link}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Remote Keyboard Tutoring System} $|$ \emph{Group Project}}{July 2021 - Dec 2021}
+          \resumeItemListStart
+            \resumeItem{A web-based system interactively learn, play or teach in combination with the aid of a hardware unit and a web application.}
+            \resumeItem{Technologies - React JS, Node JS, Express, Flutter, Embedded Systems}
+            \resumeItem{\underline{\href{https://projects.ce.pdn.ac.lk/3yp/e17/remote-keyboard-tutoring-system/}{Project Page Link}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Visitors Management System} $|$ \emph{Group Project}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{A web based system to manage visitors to any institution.}
+            \resumeItem{Technologies - SQL, HTML, CSS, JavaScript}
+            \resumeItem{\underline{\href{https://github.com/dinuransika/Visitor-Management-System-1}{Project Repository Link}}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{8-bit single cycle processor} $|$ \emph{Group Project}}{2020}
+          \resumeItemListStart
+            \resumeItem{An 8-bit single cycle CPU with associated memory hierarchy. The processor includes an ALU, register file, control logic,
+            forwarding unit, data memory, data cache, instruction memory and instruction cache.}
+            \resumeItem{Technologies - Verilog-HDL}
+           \resumeItem{\underline{\href{https://github.com/dinuransika/8-bit-single-cycle-processor}{Project Repository Link}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Compiler for Cool Language} $|$ \emph{Group Project}}{2022}
+          \resumeItemListStart
+            \resumeItem{The combination of a lexer, parser, semantic analyser, and code generator that can be used to compile programs written
+        in Cool programming language.}
+            \resumeItem{Technologies - C++}
+           \resumeItem{\underline{\href{https://github.com/dinuransika/CO521_Compilers}{Project Repository Link}}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL, C++, ARM Assembly, Verilog-HDL} \\
+     \textbf{Frameworks}{: React JS, Express, Node JS, Flutter, Jekyll} \\
+     \textbf{Graphic Designing}{: Photoshop, Illustrator, Blender, Premier Pro}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{Experience}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeListHeading{\textbf{Casual Instructor - CO 222 - Programming Methodology}}{May 2020 - September 2020}
+      \vspace*{2.0\multicolsep}
+      \begin{itemize}[ itemsep=-1pt]
+        \item Supervised weekly 2hr long online lab sessions
+        \item Created questions for online quizzes based on the C programming Language
+      \end{itemize}
+      \vspace{-18pt}
+      \resumeListHeading{\textbf{Casual Instructor - CO 226 - Database Systems}}{November 2021 - January 2022}
+      \vspace*{2.0\multicolsep}
+      \begin{itemize}[ itemsep=-1pt]
+        \item Supervised weekly 2hr long online lab sessions
+      \end{itemize}
+      \vspace{-18pt}
+      \resumeListHeading{\textbf{Computer Engineering Department Web Development Volunteer}}{November 2022 - Present}
+          
+          \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{3pt}
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+    \resumeSubHeadingListStart
+        \resumeListHeading{ \textbf{Mini Hackathon - ICDS} }{2021}
+        \vspace*{3.0\multicolsep}
+        \begin{itemize}[ itemsep=-2pt]
+          \item Data Science Hackathon organized by University of Colombo
+          \item 5\textsuperscript{th} Place(Out of 100+ teams)
+        \end{itemize}
+        \vspace{-20pt}
+        \resumeListHeading{ \textbf{ACES Coders} }{2020}
+        \vspace*{3.0\multicolsep}
+        \begin{itemize}[ itemsep=-2pt]
+          \item Overnight inter-university coding competition organized by University of Peradeniya
+          \item 14\textsuperscript{th} Place(Out of 100+ teams)
+        \end{itemize}
+        \vspace{-20pt}
+        \resumeListHeading{ \textbf{Sri Lankan Physics Olympiad organized by the Institute of Physics} }{2017}
+        \vspace*{3.0\multicolsep}
+        \begin{itemize}[ itemsep=-2pt]
+          \item Bronze Medalist
+        \end{itemize}
+        
+    \resumeSubHeadingListEnd
+\vspace{-13pt}
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{AIESEC in Uinversity of Peradeniya}{Dec 2019 -- February 2022}{Marketing Manager - Incoming Global Volunteer}{September 2021 - February 2022}
+        \resumeSubSubheading{Business to Business Manager - Incoming Global Volunteer}{March 2021 - August 2021}
+        \resumeSubSubheading{Business to Business Team Leader - Incoming Global Volunteer}{September 2020 - February 2021}
+        \resumeSubSubheading{Value Delivery Team Leader - Incoming Global Volunteer}{March 2021 - August 2021}
+        \resumeSubheading{AIESEC in Sri Lanka}{Dec 2019 -- Present}{Incoming Global Volunteer Task Force Member}{September 2020 - December 2021}
+        \resumeSubSubheading{Media Specialist(Radio) - Public Relations Team - Youth4Youth}{February 2022 - Present}
+        % \resumeSubheading{Astronomy and Space Science Association of D.S. Senanayake College}{2012 - 2017}{Committee Member - Executive Body}{2016-2017}
+        % \resumeSubheading{Music Circle of D.S. Senanayake College}{2009 - 2017}{Violinist}{ }
+    \resumeSubHeadingListEnd
+    
+\section{Recommendation}
+
+
+\end{document}
