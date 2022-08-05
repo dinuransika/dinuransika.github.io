@@ -1,1 +1,9 @@
-.aux .bit .blg .bbl .lof .log .lot .glo .glx .gxg .gxs .idx .ilg .ind .out .url .svn .toc
+# ignore everything
+*
+
+# but don't ignore files ending with slash = directories
+!*/
+
+# and don't ignore files ending with ".php"
+!*.pdf
+!*.tex
