@@ -238,8 +238,8 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 30px;
-  font-size: 60px;
+  margin: 0 0 10px 0;
+  font-size: 64px;
   font-weight: 700;
   line-height: 56px;
   color: #1f5297;
@@ -259,10 +259,18 @@ h6 {
 }
 #hero p {
   color: #777777;
-  margin: 0 0 10px 30px;
-  font-size: 16px;
+  margin: 0 0 10px 0;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
+
+#hero p span {
+  color: #777777;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
 
 @media (min-width: 1024px) {
   #hero {
@@ -274,12 +282,18 @@ h6 {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    margin: 0 10px 10px 20px;
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  #hero p{
+    font-size: 17px;
+    margin: 0 10px 10px 20px;
   }
 }
 
