@@ -1067,8 +1067,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
+  color: #a3a8bf;
+  font-size: 12px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1085,7 +1085,7 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: #a3a8bf;
 }
 
 @media (max-width: 1199px) {
