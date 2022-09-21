@@ -224,47 +224,47 @@ h6 {
 /*--------------------------------------------------------------
 # ab Section
 --------------------------------------------------------------*/
-#hero {
+#me {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top center; */
+  /* background: url("../img/me-bg.jpg") top center; */
   /* background-size: cover; */
 }
 
-#hero .hero-container {
+#me .me-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
 }
 
-#hero h1 {
+#me h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
   color: #1f5297;
 }
-#hero a {
+#me a {
   text-decoration: none;
   color: #1f5297;
 }
-#hero a:hover {
+#me a:hover {
   text-decoration: none;
   color: #777770;
 }
 
-#hero a:not([href]):not([class]), a:not([href]):not([class]):hover {
+#me a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
-#hero p {
+#me p {
   color: #777777;
   margin: 0 0 10px 0;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
+#me p span {
   color: #777777;
   padding-bottom: 4px;
   letter-spacing: 1px;
@@ -273,25 +273,25 @@ h6 {
 
 
 @media (min-width: 1024px) {
-  #hero {
+  #me {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #me h1 {
     font-size: 28px;
     line-height: 36px;
     margin: 0 10px 10px 20px;
   }
 
-  #hero h2 {
+  #me h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
-  #hero p{
+  #me p{
     font-size: 17px;
     margin: 0 10px 10px 20px;
   }
