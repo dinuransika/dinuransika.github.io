@@ -1269,3 +1269,53 @@ section {
     background: #e1e5ea;
   }
 }
+.publication-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+}
+
+.publication-title {
+  font-size: 1.2em;
+  color: #18151f;
+  margin: 0;
+}
+
+.publication-authors,
+.publication-journal,
+.publication-year {
+  color: #666;
+  font-size: 0.9em;
+  margin: 8px 0;
+}
+
+.publication-journal {
+  font-style: italic;
+}
+.publucations-title,
+.publications .h1{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #040b14;
+}
+
+.icon-button {
+  display: inline-block;
+  color: #1a73e8;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.icon-button:hover {
+  color: #0c52c2;
+}
