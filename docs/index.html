@@ -41,6 +41,11 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
+  <!-- ======= Theme toggle button ======= -->
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="bi bi-moon-fill" id="theme-icon"></i>
+  </button>
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
@@ -632,6 +637,33 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Theme Toggle -->
+  <script>
+    (function () {
+      const btn = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+
+      function applyTheme(dark) {
+        if (dark) {
+          document.body.classList.add('dark-mode');
+          icon.className = 'bi bi-sun-fill';
+        } else {
+          document.body.classList.remove('dark-mode');
+          icon.className = 'bi bi-moon-fill';
+        }
+      }
+
+      const saved = localStorage.getItem('theme');
+      applyTheme(saved === 'dark');
+
+      btn.addEventListener('click', function () {
+        const isDark = document.body.classList.contains('dark-mode');
+        applyTheme(!isDark);
+        localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      });
+    })();
+  </script>
 
 </body>
 
