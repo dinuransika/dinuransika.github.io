@@ -1319,3 +1319,132 @@ section {
 .icon-button:hover {
   color: #0c52c2;
 }
+
+/*--------------------------------------------------------------
+# Theme Toggle Button
+--------------------------------------------------------------*/
+#theme-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9999;
+  background: #149ddd;
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#theme-toggle:hover {
+  background: #0e87c0;
+}
+
+@media (max-width: 1199px) {
+  #theme-toggle {
+    right: 65px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Dark Mode
+--------------------------------------------------------------*/
+body.dark-mode {
+  background: #121621;
+  color: #c8ccd6;
+}
+
+body.dark-mode a {
+  color: #4db8f0;
+}
+
+body.dark-mode a:hover {
+  color: #7acef5;
+}
+
+body.dark-mode .section-bg {
+  background: #1a1f2e;
+}
+
+body.dark-mode .section-title h2 {
+  color: #7ab3e8;
+}
+
+body.dark-mode #me h1 {
+  color: #6eaadd;
+}
+
+body.dark-mode #me a {
+  color: #6eaadd;
+}
+
+body.dark-mode #me a:hover {
+  color: #9ec4e8;
+}
+
+body.dark-mode #me p {
+  color: #a0a8b8;
+}
+
+body.dark-mode #me p span {
+  color: #a0a8b8;
+}
+
+body.dark-mode .resume .resume-title {
+  color: #c8ccd6;
+}
+
+body.dark-mode .resume .resume-item h4 {
+  color: #c8ccd6;
+}
+
+body.dark-mode .resume .resume-item h5 {
+  background: #2a3045;
+  color: #a0c4e8;
+}
+
+body.dark-mode .resume .resume-item::before {
+  background: #121621;
+}
+
+body.dark-mode .facts .count-box span {
+  color: #c8ccd6;
+}
+
+body.dark-mode .facts .count-box p,
+body.dark-mode .facts .count-box a {
+  color: #8aaccc;
+}
+
+body.dark-mode .skills .title a {
+  color: #c8ccd6;
+}
+
+body.dark-mode .projects #projects-flters {
+  background: #1e2435;
+}
+
+body.dark-mode .projects #projects-flters li {
+  color: #a0a8b8;
+}
+
+body.dark-mode .publucations-title,
+body.dark-mode .publications .h1 {
+  color: #c8ccd6;
+}
+
+body.dark-mode footer {
+  background: #0d1018;
+  color: #7a8090;
+}
+
+body.dark-mode .back-to-top {
+  background: #0e87c0;
+}
